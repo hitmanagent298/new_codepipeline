@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: arn:aws:ecs:us-east-1:594276799913:task-definition/backend-img:1
+        TaskDefinition: arn:aws:ecs:us-east-1:594276799913:task-definition/backend-img:3
         LoadBalancerInfo:
           ContainerName: "server"
           ContainerPort: 3001
@@ -11,4 +11,4 @@ TrafficRoutingConfig:
   Type: TimeBasedCanary
   TimeBasedCanary:
     CanaryPercentage: 10
-    CanaryInterval: 10
+    CanaryInterval: 1
