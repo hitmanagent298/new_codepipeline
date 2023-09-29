@@ -7,8 +7,8 @@ Resources:
         LoadBalancerInfo:
           ContainerName: "server"
           ContainerPort: 3001
-TrafficRoutingConfig:
-  Type: TimeBasedCanary
-  TimeBasedCanary:
-    CanaryPercentage: 10
-    CanaryInterval: 1
+  TrafficRoutingConfig:
+    Type: TimeBasedCanary
+    TimeBasedCanary:
+      CanaryPercentage: 10
+      CanaryInterval: 1
