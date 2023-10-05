@@ -1,0 +1,6 @@
+[
+    {
+        "name": "server",
+        "imageUri": "594276799913.dkr.ecr.us-east-1.amazonaws.com/pipeline:latest"
+    }
+]
